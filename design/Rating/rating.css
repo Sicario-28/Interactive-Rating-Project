@@ -1,0 +1,129 @@
+
+*,::after*,::before*{
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+
+}
+
+.star{
+    border:1px solid darkslategray;
+    border-radius: 200px;
+    padding: .4em;
+    background-color: hsl(213, 19%, 18%);
+}
+
+ 
+    
+.content{
+    position: relative;
+    top: 0;
+    padding: 2em;
+    background-color:hsl(216, 12%, 8%);
+    width: 70%;
+     max-width: 238px;
+     color:  hsl(0, 0%, 100%);
+     border-radius: 20px;
+    
+}
+p{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+.subtitle{
+    font-weight: 700;
+}
+.rate_range{
+    width: 100%;
+}
+.btn_style{
+    border-radius:100px;
+   padding:em;
+    width:30px;
+    text-align:center;
+    background-color:hsl(213, 19%, 18%) ;
+    border: 5px solid hsl(213, 19%, 18%);
+    color: hsl(0, 0%, 100%);
+    opacity: .6;
+    margin-top: 1.25em;
+    margin-bottom: 1.7em;
+
+}
+.btn+.btn{
+     margin-left: 1.3em;
+}
+.sub_btn{
+      width: 100%;
+      padding: .75em;
+      border-radius: 20px;
+      background-color: hsl(25, 97%, 53%);
+      border: 2px solid  hsl(25, 97%, 53%);
+      color:hsl(0, 0%, 100%);
+      letter-spacing: 3.5px;
+}
+.feedback{
+   position: absolute;
+   top: 0;
+  display:none;
+    padding: 2em;
+    background-color:hsl(216, 12%, 8%);
+    width: 100vw;
+    height: 100vh;
+     max-width: 238px;
+     color:  hsl(0, 0%, 100%);
+     border-radius: 20px;
+   /* animation: slide 3s ease-in-out .4s ;*/
+    z-index: 1;
+
+    }
+.feedback_contents{
+     
+    }
+
+.feedback_result{
+    margin-left:1em;
+    color:hsl(25, 97%, 53%) ;
+    background-color: hsl(213, 19%, 18%);
+    padding:.5em;
+    border-radius: 20px;
+}
+.pic_illus{
+     margin-bottom: 1.5em;
+}
+.feedback_text{
+    text-align: center;
+}
+.sub_btn:hover{
+    background-color:hsl(0, 0%, 100%) ;
+    color:hsl(25, 97%, 53%);
+    border: 1px solid hsl(0, 0%, 100%)  ;
+}
+.btn:hover{
+    background-color:hsl(25, 97%, 53%);
+    opacity: 1;
+    border: 5px solid hsl(25, 97%, 53%);
+    width: 30px;
+    transform:scale(1.4);
+}
+.btn:active{
+    outline: none;
+}
+.sub_btn:active{
+    outline: none;
+}
+
+/*@keyframes slide{
+    0%{
+        transform: translateY(-50em);
+    }
+    100%{
+        transform: translateY(10em);
+    }
+}*/
